@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Gerenciamento de Filmes</h1>
+
+  <section>
+    <h2>Adicionar Filme</h2>
+    <form id="movieForm">
+      <input type="text" id="movieTitle" placeholder="Título do Filme" required>
+      <input type="number" id="movieDuration" placeholder="Duração (min)" required>
+      <input type="date" id="releaseDate" required>
+      <button type="submit">Adicionar Filme</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Lista de Filmes</h2>
+    <ul id="movieList"></ul>
+  </section>
+
+  <section>
+    <h2>Lista de Usuários</h2>
+    <ul id="userList"></ul>
+  </section>
+
+  <section>
+    <h2>Registrar Locações de Filmes</h2>
+    <form id="movieRentForm">
+      <select id="userId"></select>
+      <select id="movieId"></select>
+      <button type="submit">Registrar Locação</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

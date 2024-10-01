@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./backend
+    container_name: prisma-app
+    restart: always
+    environment:
+      DATABASE_URL: postgresql://prodb_owner:vO5AJ0afQFjR@ep-dry-bar-a55wponu.us-east-2.aws.neon.tech/prodb?sslmode=require
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
+
+  
